@@ -1,0 +1,17 @@
+//清除
+hexo clean	
+//编译推送
+hexo generate --deploy
+
+或者
+hexo clean && hexo generate --deploy
+
+-------------------------------------------
+
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/huyida/huyida.me.git
+git remote -v
+git pull --rebase origin master
+git push origin master
