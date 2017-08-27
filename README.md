@@ -10,7 +10,7 @@
 
 - 简历：
 
-  > [中文](https://github.com/huyida/huyida.me/blob/master/MISC/resume/RESUME-CN.md)
+  > [中文](https://github.com/huyida/Blog/blob/master/MISC/resume/RESUME-CN.md)
   > 英文
 
 - 邮箱:
