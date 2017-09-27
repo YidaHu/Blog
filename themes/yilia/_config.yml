@@ -92,8 +92,7 @@ duoshuo: false
 wangyiyun: false
 
 #3、畅言
-changyan_appid: 'cytbqtxP0'
-changyan_conf: '84891979a0fc4fde159c763c02c91635'
+
 
 #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus: false
@@ -124,4 +123,4 @@ friends:
   CSDN博客: http://blog.csdn.net/huyidada
 
 
-aboutme: 喜欢自由，享受自由<br><br>热爱技术，更爱生活<br><br>学识渊博，经验丰富<br><br>代码风骚，效率恐怖
+aboutme: 喜欢自由，享受自由<br><br>热爱生活，热爱技术<br><br>学识渊博，经验丰富<br><br>代码风骚，效率恐怖
