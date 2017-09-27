@@ -9,13 +9,17 @@ tags:
 - Ajax
 ---
 
+![440H](JavaSSMIntegrate\440H.jpg)
+
 # 前言
 
 本章选用Spring+SpringMVC+MyBatis开发后台接口，主要目的是实现前后端分离。
 
 前后端分离是最大好处是前后端可以实现较好的人员分工和并行开发。双方只需要约定数据接口，而不必在代码层面有任何的耦合。传统的JSP或者后端模板方式都存在着较为严重的前后端耦合，前后端人员不仅需要掌握自身所需知识，还需要对对方的领域有一定了解；开发时进度会因为双方的大量沟通而被拖慢，且项目存在缺陷时难以分清是前后端哪一方的责任，调试困难。目前较为流行的解决方案是后端提供纯数据接口，前端使用MVC/MVVM等框架实现数据绑定、界面路由等功能，且未来的发展趋势是后端负责的任务将逐步减少，进入“大前端”时代。
 
-源码下载！！！
+[源码下载！！！](https://github.com/huyida/SSM.git)
+
+<!--MORE-->
 
 # 后端
 
@@ -23,7 +27,7 @@ tags:
 
 首先我们打开IED，我这里用的是eclipse（你们应该也是用的这个，对吗？），创建一个动态web项目，建立好相应的**目录结构**（重点！）
 
-![1](F:\OneDrive\huyidablog\source\_posts\JavaSSMIntegrate\1.jpg)
+![1](JavaSSMIntegrate\1.jpg)
 
 各个目录的作用。 这个目录结构同时也遵循maven的目录规范~
 
@@ -47,7 +51,7 @@ tags:
 
 我先新建好几个必要的**包**，并为大家讲解一下每个包的作用，顺便理清一下后台的思路~
 
-![2](F:\OneDrive\huyidablog\source\_posts\JavaSSMIntegrate\2.jpg)
+![2](JavaSSMIntegrate\2.jpg)
 
 | 包名          | 名称        | 作用                                       |
 | ----------- | --------- | ---------------------------------------- |
@@ -510,7 +514,7 @@ jdbc.password=
 
 到目前为止，我们一共写了7个配置文件，我们一起来看下最终的**配置文件结构图**。
 
-![3](F:\OneDrive\huyidablog\source\_posts\JavaSSMIntegrate\3.jpg)
+![3](JavaSSMIntegrate\3.jpg)
 
 ## 接口设计
 
@@ -1026,7 +1030,7 @@ public class BookController {
 
 ## 接口测试
 
-![4](F:\OneDrive\huyidablog\source\_posts\JavaSSMIntegrate\4.jpg)
+![4](JavaSSMIntegrate\4.jpg)
 
 # 前端
 
@@ -1040,7 +1044,7 @@ public class BookController {
 
 本项目中有通过Ajax动态获取后端接口数据更新图表（柱状图、扇形图、折线图）的代码。
 
-![6](F:\OneDrive\huyidablog\source\_posts\JavaSSMIntegrate\6.jpg)
+![6](JavaSSMIntegrate\6.jpg)
 
 **调用上面后端接口的代码见如下文件。**
 
@@ -1156,6 +1160,6 @@ $(function() {
 
 # 前后端连接
 
-![5](F:\OneDrive\huyidablog\source\_posts\JavaSSMIntegrate\5.jpg)
+![5](JavaSSMIntegrate\5.jpg)
 
 到此，我们的SSM框架整合配置，与应用实例部分已经结束了，我把所有源码和jar包一起打包放在了我的GitHub上，需要的可以去下载，有用就给个star吧。

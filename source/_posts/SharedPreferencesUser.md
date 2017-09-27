@@ -39,20 +39,21 @@ Public abstract SharedPreferences.Editor  putString (String key,String value)
 
 ### 三、SharedPreferences的代码片段
 
-##### 存储sharedpreferences 
+##### 存储sharedpreferences	  
+
+```
+   public void setSharedPreference() {  
+    sharedPreferences = getSharedPreferences("loginInfo", Context.MODE_PRIVATE);  
+    Editor editor = sharedPreferences.edit();  
+    editor.putString("username", text1.getText().toString());  
+    editor.putInt("password", getpw());  
+    editor.commit();// 提交修改  
+    }  
+```
 
 
-​	 
-	    public void setSharedPreference() {  
-	    sharedPreferences = getSharedPreferences("itcast", Context.MODE_PRIVATE);  
-	    Editor editor = sharedPreferences.edit();  
-	    editor.putString("username", text1.getText().toString());  
-	    editor.putInt("password", getpw());  
-	    editor.commit();// 提交修改  
-	    }  
-##### 清除sharedpreferences的数据
 
-​    
+##### 清除sharedpreferences的数据    
 
 	    // 清除sharedpreferences的数据  
 	    public void removeSharedPreference() {  
