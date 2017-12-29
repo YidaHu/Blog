@@ -19,7 +19,7 @@ tags:
 
 函数 open() 返回文件对象，通常的用法需要两个参数：open(filename, mode)。
 
-```
+```python
 f = open('/tool/file', 'w')
 ```
 
@@ -33,7 +33,7 @@ f = open('/tool/file', 'w')
 
 ## 读文件
 
-```
+```python
 # 读取txt文件每行数据并返回list列表
 def readtxt(path):
     import re
@@ -59,7 +59,7 @@ def readtxt(path):
 
 函数 open() 返回文件对象，通常的用法需要两个参数：open(filename, mode)。
 
-```
+```python
 # 把list数据根据分组信息输出到txt文件中
 def writetxt(result_list):
     file1 = codecs.open('data1.txt', 'w', 'utf-8')
@@ -81,7 +81,7 @@ def writetxt(result_list):
 
 注意，dirnames和filenames均不包含路径信息，如需完整路径，可使用os.path.join(dirpath, dirnames)
 
-```
+```python
 import os
 #Get file name from path
 def file_name(file_dir):

@@ -53,7 +53,7 @@ public class UpdateInfo {
 
 2、 获取服务端地址。新建GetServerUrl.java
 
-```
+```java
 public class GetServerUrl {
   static String url = "http://192.168.43.143/";
   public static String getUrl() {
@@ -62,8 +62,8 @@ public class GetServerUrl {
 }
 ```
 3.新建一个UpdateInfoService.java，负责软件更新模块
-
-	public class UpdateInfoService {
+```java
+public class UpdateInfoService {
 	  ProgressDialog progressDialog;
 	  Handler handler;
 	  Context context;
@@ -197,9 +197,12 @@ public class GetServerUrl {
 	      context.startActivity(intent);
 	 	 }
 	  }
-4.在Activity中调用，点击更新按钮，会弹出对话框，显示版本号和升级描述。这里新建UpdateActivity.java
+```
 
-	public class UpdateActivity extends AppCompatActivity {
+	
+4.在Activity中调用，点击更新按钮，会弹出对话框，显示版本号和升级描述。这里新建UpdateActivity.java
+```java
+public class UpdateActivity extends AppCompatActivity {
 
 	  private UpdateInfo info;
 	  private ProgressDialog progressDialog;
@@ -283,6 +286,9 @@ public class GetServerUrl {
 	      updateInfoService.downLoadFile(url, progressDialog, handler1);
 	  }
 	}
+```
+
+	
 5.AndroidManifest.xml配置
 
 由于Google API的限制，Android N这里我们需要使用FileProvider

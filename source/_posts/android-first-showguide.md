@@ -20,7 +20,7 @@ tags:
 
 那么我们就来看看实现这种变量存储和修改的步骤吧
 
-```
+```java
 /**
          * 第一次启动时，因为没SharedPreferences文件，所以为初始化值，比如true要显示，然后在将这个值赋为false，
          * 保存后，下次启动是读取SharedPreferences文件，找到值就为false。

@@ -40,7 +40,7 @@ tags:
 
 user.java
 
-```
+```java
 public class User {
     private String username;//用户名
     private String password;//密码
@@ -67,7 +67,7 @@ UserController.java
 
 第二个服务方法`addUser()`将在URL `HelloWeb/addUser上的POST方法调用。将根据提交的信息准备模型对象。 最后，将从服务方法返回“`userlist`”视图，这将渲染`userlist.jsp` 页面。
 
-```
+```java
 @Controller
 public class UserController {
     @RequestMapping(value = "/user", method = RequestMethod.GET)
@@ -159,7 +159,7 @@ public class UserController {
 
 ### 3.spring-servlet.xml
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -195,7 +195,7 @@ public class UserController {
 
 ### 4.web.xml
 
-```
+```xml
 <!DOCTYPE web-app PUBLIC
         "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
         "http://java.sun.com/dtd/web-app_2_3.dtd" >
@@ -244,7 +244,7 @@ public class UserController {
 
 user.jsp代码如下, 
 
-```
+```jsp
 <%@ page contentType="text/html;charset=UTF-8" isELIgnored="false" language="java" %>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
@@ -316,7 +316,7 @@ userlist.jsp
 
 <%@ page contentType="text/html; charset=UTF-8" isELIgnored="false" language="java" %>这一句中isELIgnored="false"一定要加，表示使用EL语句。
 
-```
+```jsp
 <%@ page contentType="text/html;charset=UTF-8" isELIgnored="false" language="java" %>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
@@ -393,7 +393,7 @@ spring-servlet.xml与web.xml和上面的相同。
 
 FileModel.jsp代码如下:
 
-```
+```jsp
 public class FileModel {
     private MultipartFile file;
     
@@ -406,7 +406,7 @@ public class FileModel {
 
 FileUploadController.java
 
-```
+```java
 @Controller
 public class FileUploadController {
 
@@ -444,7 +444,7 @@ public class FileUploadController {
 
 fileUpload.jsp
 
-```
+```jsp
 <%@ page contentType="text/html; charset=UTF-8" isELIgnored="false" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>

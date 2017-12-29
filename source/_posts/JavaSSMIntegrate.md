@@ -70,7 +70,7 @@ tags:
 
 ### pom.xml
 
-```
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -254,7 +254,7 @@ tags:
 
 ### spring-dao.xml
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -328,7 +328,7 @@ jdbc.password=
 
 ### mybatis-config.xml
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -356,7 +356,7 @@ jdbc.password=
 
 ### spring-service.xml
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -394,7 +394,7 @@ jdbc.password=
 
 ### spring-web.xml
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -436,7 +436,7 @@ jdbc.password=
 
 这里面添加了一个过滤，是因为前端调用后端的接口的时候，需要后端接口支持跨域CORS调用，需要添加一个头，需要在后端过滤掉这种问题。见如下testFilter。
 
-```
+```xml
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
@@ -494,7 +494,7 @@ jdbc.password=
 
 ### logback.xml
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="true">
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
@@ -574,7 +574,7 @@ INSERT INTO `book` VALUES ('3', 'Spring从入门到精通', '12');
 
 ### Book.java
 
-```
+```java
 package com.soecode.lyf.entity;
 
 public class Book {
@@ -592,7 +592,7 @@ public class Book {
 
 ### Appointment.java
 
-```
+```java
 package com.soecode.lyf.entity;
 
 import java.util.Date;
@@ -624,7 +624,7 @@ public class Appointment {
 
 ### BookDao.java
 
-```
+```java
 package com.soecode.lyf.dao;
 
 import java.util.List;
@@ -670,7 +670,7 @@ public interface BookDao {
 
 ### BookDao.xml
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -719,7 +719,7 @@ public interface BookDao {
 
 **BaseTest.java**
 
-```
+```java
 package com.soecode.lyf;
 
 import org.junit.runner.RunWith;
@@ -743,7 +743,7 @@ public class BaseTest {
 
 **BookDaoTest.java**
 
-```
+```java
 package com.soecode.lyf.dao;
 
 import java.util.List;
@@ -792,7 +792,7 @@ public class BookDaoTest extends BaseTest {
 
 ### BookService.java
 
-```
+```java
 package com.soecode.lyf.service;
 
 import java.util.List;
@@ -836,7 +836,7 @@ public interface BookService {
 
 ### BookServiceImpl
 
-```
+```java
 package com.soecode.lyf.service.impl;
 
 import java.util.List;
@@ -929,7 +929,7 @@ public class BookServiceImpl implements BookService {
 
 **BookServiceImplTest.java**
 
-```
+```java
 package com.soecode.lyf.service.impl;
 
 import static org.junit.Assert.fail;
@@ -966,7 +966,7 @@ public class BookServiceImplTest extends BaseTest {
 
 这里返回JSON数据，就当与前端约束好的数据契约吧！
 
-```
+```java
 package com.huyd.controller;
 
 import com.alibaba.fastjson.JSON;
@@ -1050,7 +1050,7 @@ public class BookController {
 
 ## testData.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1070,7 +1070,7 @@ public class BookController {
 
 ## getData.js
 
-```
+```javascript
 /*
  * @Author: Huyd
  * @Date:   2017-09-09 22:22:36

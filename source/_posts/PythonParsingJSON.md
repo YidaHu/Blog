@@ -30,7 +30,7 @@ json.dumps(obj, skipkeys=False, ensure_ascii=True, check_circular=True, allow_na
 
 以下实例将数组编码为 JSON 格式数据：
 
-```
+```python
 #!/usr/bin/python
 import json
 data = {'number': 6, 'name': 'Pythontab'}

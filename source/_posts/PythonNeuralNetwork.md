@@ -21,7 +21,7 @@ TensorFlow™ 是一个采用数据流图（data flow graphs），用于数值�
 
 
 
-```	
+```	python
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 构建神经网络
