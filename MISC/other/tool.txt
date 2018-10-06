@@ -1,3 +1,6 @@
+//发布新文章
+hexo new "My New Post"
+
 //清除
 hexo clean	
 //编译推送
